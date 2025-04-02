@@ -3,19 +3,14 @@ package Televisores;
 public class Televisor {
     private String marca;
     private String modelo;
-    private String tipo;
-    private int tamañoDePantalla;
-    private String resolucion;
+    private Pantalla pantalla;
     private boolean esSmart;
     private boolean estaEncendido;
 
-    public Televisor(String marca, String modelo, String tipo, int tamañoDePantalla, String resolucion,
-            boolean esSmart, boolean estaEncendido) {
+    public Televisor(String marca, String modelo, Pantalla pantalla,boolean esSmart, boolean estaEncendido) {
         this.marca = marca;
         this.modelo = modelo;
-        this.tipo = tipo;
-        this.tamañoDePantalla = tamañoDePantalla;
-        this.resolucion = resolucion;
+        this.pantalla = pantalla;
         this.esSmart = esSmart;
         this.estaEncendido = estaEncendido;
     }
@@ -44,16 +39,8 @@ public class Televisor {
         return modelo;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public int getTamañoDePantalla() {
-        return tamañoDePantalla;
-    }
-
-    public String getResolucion() {
-        return resolucion;
+    public Pantalla getPantalla() {
+        return pantalla;
     }
 
     public boolean isEsSmart() {
